@@ -1,0 +1,41 @@
+/* Default styles for mobile devices */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: none;
+}
+
+nav li {
+  margin: 0.5rem;
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+  }
+}
+
+/* Media query for desktops */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  nav li {
+    margin: 1rem;
+  }
+}
